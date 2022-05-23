@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>User Address</mat-card-title>
+    <mat-card-subtitle>{{userName}}</mat-card-subtitle>
+    <mat-card-content>
+        <form class="address-card">
+            <mat-form-field class="field" appearance="fill" style="cursor: pointer;">
+                <mat-label>Country</mat-label>
+                <input matInput placeholder="Country" value="{{address?.country}}" readonly="true">
+            </mat-form-field>
+
+            <mat-form-field class="field" appearance="fill">
+                <mat-label>City</mat-label>
+                <input matInput placeholder="City" value="{{address?.city}}" readonly="true">
+            </mat-form-field>
+
+            <mat-form-field class="field" appearance="fill">
+                <mat-label>Street</mat-label>
+                <input matInput placeholder="Street" value="{{address?.street}}" readonly="true">
+            </mat-form-field>
+
+            <mat-form-field class="field" appearance="fill">
+                <mat-label>PostalCode</mat-label>
+                <input matInput placeholder="PostalCode" value="{{address?.postalCode}}" readonly="true">
+            </mat-form-field>
+        </form>
+
+    </mat-card-content>
+</mat-card>
